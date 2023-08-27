@@ -2,12 +2,12 @@
 // by all bots regardless of the platform
 
 abstract class AbstractBot {
-    platform: string;
+    abstract platform: string;
 
-    abstract configure();
+    abstract configure(): any;
     abstract getPlatform(): string;
     abstract healtCheck(): boolean;
-    abstract start();
+    abstract start(): any;
     abstract respondWithError(): any;
     abstract respondWithSuccess(): any;
 }
